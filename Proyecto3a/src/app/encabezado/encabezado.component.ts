@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './encabezado.component.css'
 })
 export class EncabezadoComponent {
-
+  titulo = "Potencia tus estudios sorbe la educacion sexual";
+  subtitulo = "En colaboracion con la sociedad";
 }
