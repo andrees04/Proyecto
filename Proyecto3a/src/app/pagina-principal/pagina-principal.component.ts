@@ -18,7 +18,7 @@ export class PaginaPrincipalComponent {
 
   mostrarFondo: boolean = false;
 
-  titulo = "Potencia tus estudios sorbe la educacion sexual";
+  titulo = "Potencia tus estudios sobre la educacion sexual";
   subtitulo = "En colaboracion con la sociedad";
 
   aplicarFiltro(hover: boolean) {
