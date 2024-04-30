@@ -1,1 +1,232 @@
-<p>pagina-pagos works!</p>
+!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagos</title>
+    <link rel="shortcut icon" href="img/cabeza.png" type="image/x-icon">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <style>
+        .header-gradient {
+            background: linear-gradient(135deg, #9b59b6, #e74c3c);
+        }
+    </style>
+
+    <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+
+    <body class="bg-ligth">
+
+        <div class="container">
+            <div class="row">
+                <div class="col py-5 text-center">
+                    <h2>Formulario de Pago</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nostrum suscipit optio quia similique odit eum voluptate? Eveniet officiis, aliquid eligendi dolorem in inventore dignissimos possimus quos.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Formulario -->
+                <div class="col-12 col-md-8 order-2 order-md-1">
+                    <h4 class="mb-3">Direccion de envio</h4>
+                    <form action="">
+                        <!-- Nombre y apellido -->
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+    
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido">
+                            </div>
+                        </div>
+    
+                        <!-- Usuario -->
+                        <div class="mb-3">
+                            <label for="usuario">Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input class="form-control" type="text" id="usuario" placeholder="Usuario" name="usuario">
+                            </div>
+                        </div>
+    
+                        <!-- Correo -->
+                        <div class="mb-3">
+                            <label for="correo">Correo <span class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@correo.com">
+                        </div>
+    
+                        <!-- Direccion -->
+                        <div class="mb-3">
+                            <label for="direccion">Direccion</label>
+                            <input type="text" class="form-control" placeholder="Calle 1234" name="direccion" id="direccion">
+                        </div>
+    
+                        <!-- Direccion 2 -->
+                        <div class="mb-3">
+                            <label for="direccion2">Direccion 2 <span class="text-muted">(Opcional)</span></label>
+                            <input type="text" class="form-control" placeholder="Informacion adicional" name="direccion2" id="direccion2">
+                        </div>
+    
+                        <!-- Pais, Estado, Codifo Postal -->
+                        <div class="row">
+                            <!-- Pais -->
+                            <div class="col-12 col-sm-4 mb-3">
+                                <label for="pais">Pais</label>
+                                <select class="form-control" name="pais" id="pais">
+                                    <option value="">Seleccionar Pais</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="españa">España</option>
+                                    <option value="alemania">Alemania</option>
+                                    <option value="japon">Japon</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </div>
+                            <!-- Estado -->
+                            <div class="col-12 col-sm-4 mb-3">
+                                <label for="pais">Provincia o Estado</label>
+                                <select class="form-control" name="pais" id="pais">
+                                    <option value="">Seleccionar Estado</option>
+                                    <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                                    <option value="bsas">Buenos Aires</option>
+                                    <option value="cordoba">Cordoba</option>
+                                    <option value="mendoza">Mendoza</option>
+                                    <option value="salta">Salta</option>
+                                </select>
+                            </div>
+                            <!-- Codigo Postal -->
+                            <div class="col-12 col-sm-4 mb-3">
+                                <label for="codigo-postal">Codigo Postal</label>
+                                <input class="form-control" type="text" id="codigo-postal">
+                            </div>
+                        </div>
+    
+                        <hr>
+    
+                        <!-- Checkboxes -->
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="misma-direccion">
+                            <label class="custom-control-label" for="misma-direccion">Enviar a la misma direccion</label>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="guardar-informacion">
+                            <label class="custom-control-label" for="guardar-informacion">Guardar informacion para la siguiente compra</label>
+                        </div>
+    
+                        <hr class="mb-4">
+    
+                        <!-- Forma de pago -->
+                        <div class="d-block mb-3">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="metodo-pago" id="tarjeta-credito" class="custom-control-input" checked>
+                                <label class="custom-control-label" for="tarjeta-credito">Tarjeta de Credito</label>
+                            </div>
+    
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="metodo-pago" id="tarjeta-debito" class="custom-control-input">
+                                <label class="custom-control-label" for="tarjeta-debito">Tarjeta de debito</label>
+                            </div>
+    
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="metodo-pago" id="paypal" class="custom-control-input">
+                                <label class="custom-control-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="tarjeta">Nombre en la tarjeta</label>
+                                <input type="text" id="tarjeta" class="form-control">
+                                <small class="text-muted">Nombre completo como se ve en la tarjeta</small>
+                            </div>
+    
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="numero-tarjeta">Numero de tarjeta</label>
+                                <input type="text" id="numero-tarjeta" class="form-control">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-6 col-sm-4 mb-3">
+                                <label for="tarjeta-expiracion">Expiracion</label>
+                                <input type="text" id="tarjeta-expiracion" class="form-control">
+                            </div>
+    
+                            <div class="col-6 col-sm-4 mb-3">
+                                <label for="tarjeta-cvv">CVV</label>
+                                <input type="text" id="tarjeta-cvv" class="form-control">
+                            </div>
+                        </div>
+    
+                        <hr class="mb-4">
+    
+                        <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+    
+    
+                    </form>
+                </div>
+    
+                <!-- Carrito -->
+                <div class="col-12 col-md-4 order-1 order-md-2">
+                    <h4 class="mb-3 d-flex justify-content-between align-items-center">
+                        <span class="text-muted">Tu Carrito</span>
+                        <span class="badge - badge-secondary badge-pill">3</span>
+                    </h4>
+    
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Nombre del producto</h6>
+                                <small class="text-muted">Descripcion del producto</small>
+                            </div>
+                            <span class="text-muted"></span>
+                        </li>
+    
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Segundo producto</h6>
+                                <small class="text-muted">Descripcion del producto</small>
+                            </div>
+                            <span class="text-muted"></span>
+                        </li>
+    
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Tercer producto</h6>
+                                <small class="text-muted">Descripcion del producto</small>
+                            </div>
+                            <span class="text-muted"></span>
+                        </li>
+    
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Codigo de descuento</h6>
+                                <small class="text-success">CUPONEJEMPLO99</small>
+                            </div>
+                            <span class="text-success"></span>
+                        </li>
+    
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <span class="text-muted">Total (USD)</span>
+                            <strong></strong>
+                        </li>
+                    </ul>
+    
+                    <form action="" class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cupon">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary">Canjear</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
