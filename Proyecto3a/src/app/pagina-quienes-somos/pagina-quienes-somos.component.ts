@@ -3,14 +3,12 @@ import { EncabezadoComponent } from '../encabezado/encabezado.component';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
-  selector: 'app-pagina-pagos',
+  selector: 'app-pagina-quienes-somos',
   standalone: true,
   imports: [EncabezadoComponent, FooterComponent],
-  templateUrl: './pagina-pagos.component.html',
-  styleUrl: './pagina-pagos.component.css'
+  templateUrl: './pagina-quienes-somos.component.html',
+  styleUrl: './pagina-quienes-somos.component.css'
 })
-export class PaginaPagosComponent {
-  titulo = "Pagos";
-  subtitulo = "";
-  
+export class PaginaQuienesSomosComponent {
+
 }

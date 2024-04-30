@@ -2,15 +2,14 @@ import { Component } from '@angular/core';
 import { EncabezadoComponent } from '../encabezado/encabezado.component';
 import { FooterComponent } from '../footer/footer.component';
 
+
 @Component({
-  selector: 'app-pagina-pagos',
+  selector: 'app-pagina-registro',
   standalone: true,
   imports: [EncabezadoComponent, FooterComponent],
-  templateUrl: './pagina-pagos.component.html',
-  styleUrl: './pagina-pagos.component.css'
+  templateUrl: './pagina-registro.component.html',
+  styleUrl: './pagina-registro.component.css'
 })
-export class PaginaPagosComponent {
-  titulo = "Pagos";
-  subtitulo = "";
-  
+export class PaginaRegistroComponent {
+
 }
