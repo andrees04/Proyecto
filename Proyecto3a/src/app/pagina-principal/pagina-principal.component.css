@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Texto en negrita, justificado y más pequeño */
+.card-title,
+.card-text {
+
+    text-align: justify;
+}
+
+.card-text {
+            font-size: 1rem;
+            line-height: 1.10;
+}
+
+.text-purple{
+    color: blueviolet;
+}
+
+.max-container {
+    max-width: 1200px; /* Cambia este valor según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
