@@ -11,5 +11,6 @@ import { EncabezadoComponent } from '../encabezado/encabezado.component';
   styleUrl: './pagina-principal.component.css'
 })
 export class PaginaPrincipalComponent {
-
+  titulo = "Potencia tus estudios sorbe la educacion sexual";
+  subtitulo = "En colaboracion con la sociedad";
 }

@@ -10,5 +10,6 @@ import { EncabezadoComponent } from '../encabezado/encabezado.component';
   styleUrl: './pagina-asumimos-riesgos.component.css'
 })
 export class PaginaAsumimosRiesgosComponent {
-
+  titulo = "Pagina riesgos";
+  subtitulo = "qwertyuiop";
 }

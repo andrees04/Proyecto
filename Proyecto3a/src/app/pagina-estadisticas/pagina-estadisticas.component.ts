@@ -9,5 +9,6 @@ import { EncabezadoComponent } from '../encabezado/encabezado.component';
   styleUrl: './pagina-estadisticas.component.css'
 })
 export class PaginaEstadisticasComponent {
-
+  titulo = "Pagina estadisticas";
+  subtitulo = "1234567890-"
 }
