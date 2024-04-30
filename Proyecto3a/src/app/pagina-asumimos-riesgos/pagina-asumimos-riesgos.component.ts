@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { EncabezadoComponent } from '../encabezado/encabezado.component';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
   selector: 'app-pagina-asumimos-riesgos',
   standalone: true,
-  imports: [EncabezadoComponent],
+  imports: [EncabezadoComponent, FooterComponent],
   templateUrl: './pagina-asumimos-riesgos.component.html',
   styleUrl: './pagina-asumimos-riesgos.component.css'
 })
