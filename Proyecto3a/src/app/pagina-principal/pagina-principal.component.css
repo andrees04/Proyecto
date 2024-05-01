@@ -6,16 +6,15 @@ body {
 /* Texto en negrita, justificado y más pequeño */
 .card-title,
 .card-text {
-
     text-align: justify;
 }
 
 .card-text {
-            font-size: 1rem;
-            line-height: 1.10;
+    font-size: 1rem;
+    line-height: 1.10;
 }
 
-.text-purple{
+.text-purple {
     color: blueviolet;
 }
 
@@ -29,25 +28,33 @@ body {
 }
 
 .galeria-port {
+    width: calc(60% - 20px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra las imágenes horizontalmente */
     flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
 .imagen-port {
-    width: 15%;
-    margin-bottom: 10px;
+    width: calc(25% - 20px); /* Ajusta el ancho para que haya cuatro imágenes por fila */
+    margin-bottom: 20px; /* Añade un margen inferior entre las imágenes */
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
 
 .imagen-port>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 300px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Hace que la imagen se adapte y se recorte según sea necesario */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 100%; /* Limita la altura máxima de la imagen al 100% del contenedor */
+    display: flex; /* Aplica flexbox directamente a la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
 }
 
 .hover-galeria {
@@ -57,7 +64,7 @@ body {
     top: 0;
     transform: scale(0);
     background: hsla(273, 91%, 27%, 0.7);
-    transition: transform .5s;
+    transition: transform 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
