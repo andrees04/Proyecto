@@ -80,6 +80,43 @@ body {
     max-width: 100%;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card>.contenido-texto-card {
+    flex: 1; /* Haz que el contenedor de texto ocupe el espacio restante */
+    color: #fff;
+    padding: 0 10px; /* Agrega un poco de espacio interno para separar el texto de los bordes */
+}
+
+.cards .card>.contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
 
 
 
