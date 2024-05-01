@@ -44,7 +44,7 @@
         <div class="imagen-port">
           <img src="assets/img/img1.jpg" class="img-fluid img-thumbnail" alt="">
           <div class="hover-galeria">
-            <a href="../pagina-asumimos-riesgos">
+            <a class="nav-link" routerLink="/pagina-asumimos-riesgos" routerLinkActive="active">
               <img class="iconito" src="assets/img/icono1.png" alt="">
             </a>
             <p>Asumimos Riesgos</p>
@@ -54,7 +54,7 @@
         <div class="imagen-port">
           <img src="assets/img/img2.jpg" class="img-fluid img-thumbnail" alt="">
           <div class="hover-galeria">
-            <a href="NuestroTrabajo.html">
+            <a class="nav-link" routerLink="/pagina-quienes-somos" routerLinkActive="active">
               <img src="assets/img/icono1.png" alt="">
             </a>
             <p>Quienes somos?</p>
@@ -64,7 +64,7 @@
         <div class="imagen-port">
           <img src="assets/img/img3.jpg" class="img-fluid img-thumbnail" alt="">
           <div class="hover-galeria">
-            <a routerLink="../pagina-estadisticas">
+            <a class="nav-link" routerLink="/pagina-estadisticas" routerLinkActive="active">
               <img src="assets/img/icono1.png" alt="">
             </a>
             <p>Estadisticas</p>
@@ -74,7 +74,7 @@
         <div class="imagen-port">
           <img src="assets/img/img4.jpg" class="img-fluid img-thumbnail" alt="">
           <div class="hover-galeria">
-            <a href="inscripciones.html">
+            <a class="nav-link" routerLink="/pagina-tienda" routerLinkActive="active">
               <img src="assets/img/icono1.png" alt="">
             </a>
             <p>Inscripciones</p>
@@ -103,42 +103,35 @@
   </section>
   
 
-  <section class="clientes contenedor">
-    <h2 class="titulo d-flex justify-content-center">Nuestros Profesionales</h2>
-    <div class="cards">
-        <div class="card">
-            <div class="row no-gutters">
-                <div class="col-md-3">
-                    <img src="assets/img/descarga.jpg" alt="" class="img-fluid">
+  <section class="clientes contenedor mt-5 mb-5">
+    <h2 class="titulo text-center">Nuestros Profesionales</h2>
+    <div class="cards row ">
+      <div class="card col-lg-6 col-md-12 mb-4">
+      <div class="row no-gutters align-items-center">
+          <div class="col-md-4 text-center">
+              <img src="assets/img/descarga.jpg" alt="" class="img-fluid rounded-circle mx-auto my-3">
+          </div>
+          <div class="col-md-8">
+              <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
+                  <h4 class="mb-3">Oscar Claramunt</h4>
+                  <p class="mb-0">Profesional medico, especializado en el ámbito sexual</p>
+              </div>
+          </div>
+      </div>
+  </div>
+        <div class="card col-lg-6 col-md-12 mb-4">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/psicologa.jpg" alt="" class="img-fluid rounded-circle mx-auto my-3">
                 </div>
-                <div class="col-md-9">
-                    <div class="contenido-texto-card" style="color: aliceblue;">
-                        <h4>Oscar Claramunt</h4>
-                        <p>Profesor especializado en el ámbito sexual para garantizar la educación</p>
+                <div class="col-md-8">
+                    <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
+                        <h4 class="mb-3">Sofia Velgara</h4>
+                        <p class="mb-0">Asistenta personal, especializada en el ámbito sexual</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-          <div class="row no-gutters">
-              <div class="col-md-3">
-                  <img src="assets/img/psicologa.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-9">
-                  <div class="contenido-texto-card" style="color: aliceblue;">
-                      <h4>Sofia Velgara</h4>
-                      <p>Asistenta personal,especializada en el ámbito sexual de la psicologia</p>
-                  </div>
-              </div>
-          </div>
-      </div>
     </div>
 </section>
-
-  
-  
-  
-  
-  
-  
-  <app-footer></app-footer>
+<app-footer></app-footer>
