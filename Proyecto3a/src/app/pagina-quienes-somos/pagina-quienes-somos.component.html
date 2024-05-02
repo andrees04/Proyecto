@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Incripción</title>
-    <link rel="shortcut icon" href="img/cabeza.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Clínica Médica</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link href="pagina-quienes-somos.component.css" rel="stylesheet">
+</head>
+<body>
+    <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
-    <style>
-        .header-gradient {
-            background: linear-gradient(135deg, #9b59b6, #e74c3c);
-        }
-    </style>
-
-<app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
-
-<section class="clientes contenedor mt-5 mb-5">
-    <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5">Nuestros Profesionales</h2>
-    <div class="cards row">
-        <div class="card col-lg-6 col-md-12 mb-4 mx-auto">
-            <div class="row no-gutters align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/descarga.jpg" alt="" class="img-fluid rounded-circle mx-auto my-3">
-                </div>
-                <div class="col-md-8">
-                    <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
-                        <h4 class="mb-3">Oscar Claramunt</h4>
-                        <p class="mb-0">Profesional médico, especializado en el ámbito sexual</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Quiénes somos -->
+  <section id="quienes-somos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Quiénes Somos</h2>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p class="lead text-center">
+            Caminos Íntimos: Navegando en la Sexualidad es una empresa pionera en el ámbito de la salud sexual y emocional, comprometida con el bienestar integral de sus clientes. Contamos con la distinguida colaboración de dos de los mejores médicos y psicólogos de España, cuya experiencia y dedicación se reflejan en cada uno de nuestros servicios. Desde terapias individuales hasta talleres educativos, nuestro equipo multidisciplinario ofrece un enfoque holístico para abordar las diversas dimensiones de la sexualidad humana. En Caminos Íntimos, entendemos la importancia de crear un espacio seguro y confidencial donde nuestros clientes puedan explorar, comprender y mejorar su relación con su sexualidad, promoviendo así una vida más plena y satisfactoria.</p>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
+  <!-- Médicos -->
+  <section id="medicos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Médicos</h2>
+      <div class="row">
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/medico2.jpg" class="card-img-top" alt="Médico 2">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Nombre Apellido</h5>
+              <p class="card-text">Especialidad: Especialidad 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/medico3.jpg" class="card-img-top" alt="Médico 3">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Nombre Apellido</h5>
+              <p class="card-text">Especialidad: Especialidad 3</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
