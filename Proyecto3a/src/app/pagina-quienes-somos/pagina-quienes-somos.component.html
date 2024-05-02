@@ -1,1 +1,39 @@
-<p>pagina-quienes-somos works!</p>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Incripción</title>
+    <link rel="shortcut icon" href="img/cabeza.png" type="image/x-icon">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <style>
+        .header-gradient {
+            background: linear-gradient(135deg, #9b59b6, #e74c3c);
+        }
+    </style>
+
+<app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+
+<section class="clientes contenedor mt-5 mb-5">
+    <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5">Nuestros Profesionales</h2>
+    <div class="cards row">
+        <div class="card col-lg-6 col-md-12 mb-4 mx-auto">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/descarga.jpg" alt="" class="img-fluid rounded-circle mx-auto my-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
+                        <h4 class="mb-3">Oscar Claramunt</h4>
+                        <p class="mb-0">Profesional médico, especializado en el ámbito sexual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
