@@ -10,7 +10,7 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './pagina-pagos.component.css'
 })
 export class PaginaPagosComponent {
-  titulo = "Pagos";
+  titulo = "Formulario de Pago";
   subtitulo = "";
   
 }
