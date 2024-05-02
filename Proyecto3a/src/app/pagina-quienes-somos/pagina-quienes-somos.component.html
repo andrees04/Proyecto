@@ -8,9 +8,28 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <link href="pagina-quienes-somos.component.css" rel="stylesheet">
+  <style>
+    .card {
+      background-color: purple; /* Color morado */
+      color: white; /* Texto blanco */
+      text-align: center; /* Centrar texto */
+    }
+
+    .card img {
+      display: block;
+      margin: 0 auto; /* Centrar imagen horizontalmente */
+    }
+
+    .quienes-somos-texto {
+      background-color: #e6e6fa; /* Color de fondo morado claro */
+      padding: 20px; /* Espaciado interno */
+      border-radius: 10px; /* Bordes redondeados */
+      margin-top: 20px; /* Espacio superior */
+    }
+  </style>
 </head>
 <body>
-    <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+  <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
 
   <!-- Quiénes somos -->
   <section id="quienes-somos" class="py-5">
@@ -18,8 +37,11 @@
       <h2 class="text-center mb-4">Quiénes Somos</h2>
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <p class="lead text-center">
-            Caminos Íntimos: Navegando en la Sexualidad es una empresa pionera en el ámbito de la salud sexual y emocional, comprometida con el bienestar integral de sus clientes. Contamos con la distinguida colaboración de dos de los mejores médicos y psicólogos de España, cuya experiencia y dedicación se reflejan en cada uno de nuestros servicios. Desde terapias individuales hasta talleres educativos, nuestro equipo multidisciplinario ofrece un enfoque holístico para abordar las diversas dimensiones de la sexualidad humana. En Caminos Íntimos, entendemos la importancia de crear un espacio seguro y confidencial donde nuestros clientes puedan explorar, comprender y mejorar su relación con su sexualidad, promoviendo así una vida más plena y satisfactoria.</p>
+          <div class="quienes-somos-texto">
+            <p class="lead text-center">
+              Caminos Íntimos: Navegando en la Sexualidad es una empresa pionera en el ámbito de la salud sexual y emocional, comprometida con el bienestar integral de sus clientes. Contamos con la distinguida colaboración de dos de los mejores médicos y psicólogos de España, cuya experiencia y dedicación se reflejan en cada uno de nuestros servicios. Desde terapias individuales hasta talleres educativos, nuestro equipo multidisciplinario ofrece un enfoque holístico para abordar las diversas dimensiones de la sexualidad humana. En Caminos Íntimos, entendemos la importancia de crear un espacio seguro y confidencial donde nuestros clientes puedan explorar, comprender y mejorar su relación con su sexualidad, promoviendo así una vida más plena y satisfactoria.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -28,28 +50,26 @@
   <!-- Médicos -->
   <section id="medicos" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Nuestros Médicos</h2>
+      <h2 class="text-center mb-4">Nuestros Especialistas</h2>
       <div class="row">
-  
         <div class="col-md-3">
           <div class="card">
-            <img src="img/medico2.jpg" class="card-img-top" alt="Médico 2">
+            <img src="assets/img/descarga.jpg" class="card-img-top" alt="Médico 2">
             <div class="card-body">
-              <h5 class="card-title">Dr. Nombre Apellido</h5>
-              <p class="card-text">Especialidad: Especialidad 2</p>
+              <h5 class="card-title">Dr. Oscar Claramunt</h5>
+              <p class="card-text">Especialidad: Reconocido como uno de los principales referentes en el ámbito de la salud sexual en España, aporta décadas de experiencia y un profundo compromiso con el bienestar de sus pacientes. Su enfoque empático, habilidad para combinar la ciencia médica y una sensibilidad humanista lo convierten en un aliado invaluable en el camino hacia una sexualidad saludable y satisfactoria.</p>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
-            <img src="img/medico3.jpg" class="card-img-top" alt="Médico 3">
+            <img src="assets/img/psicologa.jpg" class="card-img-top" alt="Médico 3">
             <div class="card-body">
-              <h5 class="card-title">Dr. Nombre Apellido</h5>
-              <p class="card-text">Especialidad: Especialidad 3</p>
+              <h5 class="card-title">Dra. Sofia Velgara</h5>
+              <p class="card-text">Especialidad: Una destacada asistente personal y psicóloga especializada en salud sexual, destaca por su enfoque integral y su profundo compromiso con el bienestar emocional de sus pacientes. Con una combinación única de habilidades clínicas y comprensión empática, la Dra. Velgara guía a sus clientes en el proceso de explorar y comprender su sexualidad, brindando un apoyo inigualable en su viaje hacia una vida sexual más plena.</p>
             </div>
           </div>
         </div>
-      
       </div>
     </div>
   </section>
