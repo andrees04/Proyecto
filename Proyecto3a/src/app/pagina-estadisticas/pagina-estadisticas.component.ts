@@ -11,5 +11,5 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PaginaEstadisticasComponent {
   titulo = "Pagina estadisticas";
-  subtitulo = "1234567890-"
+  subtitulo = "Estadisticas"
 }
