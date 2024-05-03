@@ -12,5 +12,5 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PaginaAsumimosRiesgosComponent {
   titulo = "Pagina riesgos";
-  subtitulo = "qwertyuiop";
+  subtitulo = "En colaboración con la sociedad";
 }

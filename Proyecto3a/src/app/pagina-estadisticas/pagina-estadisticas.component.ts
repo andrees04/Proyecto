@@ -10,6 +10,6 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './pagina-estadisticas.component.css'
 })
 export class PaginaEstadisticasComponent {
-  titulo = "Pagina estadisticas";
-  subtitulo = "Estadisticas"
+  titulo = "Estadísticas";
+  subtitulo = "En colaboracion con la sociedad";
 }

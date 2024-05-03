@@ -13,6 +13,6 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './pagina-tienda.component.css'
 })
 export class PaginaTiendaComponent {
-  titulo = "Pagina tienda";
-  subtitulo = "Inscripciones";
+  titulo = "Inscripciones ";
+  subtitulo = "En colaboración con la sociedad";
 }

@@ -11,6 +11,6 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PaginaPagosComponent {
   titulo = "Formulario de Pago";
-  subtitulo = "";
+  subtitulo = "En colaboracion con la sociedad";
   
 }
