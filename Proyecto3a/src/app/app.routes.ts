@@ -8,12 +8,14 @@ import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.compo
 import { PaginaInicioSesionComponent } from './pagina-inicio-sesion/pagina-inicio-sesion.component';
 import { PaginaRegistroComponent } from './pagina-registro/pagina-registro.component';
 import { PaginaQuienesSomosComponent } from './pagina-quienes-somos/pagina-quienes-somos.component';
+import { Error404Component } from './component/error404/error404.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import path from 'path';
 
 export const routes: Routes = [
 
-    { path: '',   redirectTo: '/pagina-pagos', pathMatch: 'full' },
+    { path: '',   redirectTo: '/pagina-principal', pathMatch: 'full' },
 
     { path: 'pagina-principal', title:"Home", component: PaginaPrincipalComponent },
 
@@ -33,6 +35,10 @@ export const routes: Routes = [
 
     {path: 'pagina-registro', component: PaginaRegistroComponent},
 
-    {path: 'pagina-contacto', component: PaginaContactoComponent}
+    {path: 'pagina-contacto', component: PaginaContactoComponent},
+
+    {path: 'error404', component: Error404Component},
+
+    {path: '**', redirectTo: '/error404'}
 
 ];

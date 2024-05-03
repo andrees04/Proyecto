@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
-import { FooterComponent } from '../footer/footer.component';
+import { FooterComponent } from '../component/footer/footer.component';
 
 
 @Component({
