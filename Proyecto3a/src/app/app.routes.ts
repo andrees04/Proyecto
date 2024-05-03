@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 
 export const routes: Routes = [
 
-    { path: '',   redirectTo: '/pagina-principal', pathMatch: 'full' },
+    { path: '',   redirectTo: '/pagina-contacto', pathMatch: 'full' },
 
     { path: 'pagina-principal', title:"Home", component: PaginaPrincipalComponent },
 
@@ -32,5 +32,7 @@ export const routes: Routes = [
     {path: 'pagina-inicio-sesion', component: PaginaInicioSesionComponent},
 
     {path: 'pagina-registro', component: PaginaRegistroComponent},
+
+    {path: 'pagina-contacto', component: PaginaContactoComponent}
 
 ];
