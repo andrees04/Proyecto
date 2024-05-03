@@ -4,45 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Clínica Médica</title>
-  <!-- Bootstrap CSS -->
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Custom CSS -->
+  
   <link href="pagina-quienes-somos.component.css" rel="stylesheet">
   <style>
     .card {
-      background-color: purple; /* Color morado */
-      color: white; /* Texto blanco */
-      text-align: center; /* Centrar texto */
-      height: 100%; /* Altura igual para ambos */
+      background-color: purple; 
+      color: white; 
+      text-align: center; 
+      height: 100%; 
     }
 
     .card img {
-      width: 100%; /* Imagen al 100% del contenedor */
-      height: auto; /* Altura automática */
+      width: 100%; 
+      height: auto; 
     }
 
     .card-body {
-      padding: 20px; /* Ajustar espaciado interno */
+      padding: 20px; 
     }
 
     .quienes-somos-texto {
-      background-color: #e6e6fa; /* Color de fondo morado claro */
-      padding: 20px; /* Espaciado interno */
-      border-radius: 10px; /* Bordes redondeados */
+      background-color: #e6e6fa; 
+      padding: 20px; 
+      border-radius: 10px; 
     }
 
     .card-title {
-      margin-top: 15px; /* Espaciado superior para el título */
+      margin-top: 15px; 
     }
 
     .card-text {
-      margin-bottom: 15px; /* Espaciado inferior para el texto */
+      margin-bottom: 15px; 
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- App Encabezado -->
+   
     <div class="row">
       <div class="col-md-12">
         <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <!-- Quiénes somos -->
+  
   <section id="quienes-somos" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Quiénes Somos</h2>
@@ -66,7 +66,7 @@
     </div>
   </section>
 
-  <!-- Médicos -->
+ 
   <section id="medicos" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Nuestros Especialistas</h2>
@@ -93,12 +93,12 @@
     </div>
   </section>
 
-  <!-- Footer -->
+ 
   <div class="container">
     <app-footer></app-footer>
   </div>
 
-  <!-- Bootstrap JS -->
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
