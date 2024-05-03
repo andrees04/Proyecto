@@ -16,22 +16,20 @@
     </style>
 
     <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+    <div class="textoMorado">
+    <p class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-4">Direccion de facturacion</p>
+    </div>
 
     <body class="bg-ligth">
-
         <div class="container">
             <div class="row">
                 <div class="col py-5 text-center">
                     <h2></h2>
                 </div>
             </div>
-    
-            <div class="row">
-
-                <div class="col-12 col-md-8 order-2 order-md-1">
-                    <h4 class="mb-3">Direccion de envio</h4>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 border-2 order-md-1"> 
                     <form action="">
-
                         <div class="row">
                             <div class="col-12 col-sm-6 mb-3">
                                 <label for="nombre">Nombre</label>
@@ -43,8 +41,6 @@
                                 <input type="text" class="form-control" id="apellido" name="apellido" required>
                             </div>
                         </div>
-    
-
                         <div class="mb-3">
                             <label for="usuario">Usuario</label>
                             <div class="input-group">
@@ -54,24 +50,19 @@
                                 <input class="form-control" type="text" id="usuario" placeholder="Usuario" name="usuario" required>
                             </div>
                         </div>
-
                         <div class="mb-3">
                             <label for="correo">Correo <span class="text-muted">(Opcional)</span></label>
                             <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@correo.com" >
                         </div>
-
                         <div class="mb-3">
                             <label for="direccion">Direccion</label>
                             <input type="text" class="form-control" placeholder="Calle 1234" name="direccion" id="direccion" required>
                         </div>
-
                         <div class="mb-3">
                             <label for="direccion2">Direccion 2 <span class="text-muted">(Opcional)</span></label>
                             <input type="text" class="form-control" placeholder="Informacion adicional" name="direccion2" id="direccion2" >
                         </div>
-
                         <div class="row">
-
                             <div class="col-12 col-sm-4 mb-3">
                                 <label for="pais">Pais</label>
                                 <select class="form-control" name="pais" id="pais" required>
@@ -200,72 +191,18 @@
                                 <input type="text" id="tarjeta-cvv" class="form-control" required>
                             </div>
                         </div>
-    
                         <hr class="mb-4">
+                        
+                        <div class="mb-5">
+                        <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary" style="background-color: #af91d1;">
+                    </div>
     
-                        <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
     
-    
-                    </form>
-                </div>
-    
-
-                <div class="col-12 col-md-4 order-1 order-md-2">
-                    <h4 class="mb-3 d-flex justify-content-between align-items-center">
-                        <span class="text-muted">Tu Carrito</span>
-                        <span class="badge - badge-secondary badge-pill">3</span>
-                    </h4>
-    
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Nombre del producto</h6>
-                                <small class="text-muted">Descripcion del producto</small>
-                            </div>
-                            <span class="text-muted"></span>
-                        </li>
-    
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Segundo producto</h6>
-                                <small class="text-muted">Descripcion del producto</small>
-                            </div>
-                            <span class="text-muted"></span>
-                        </li>
-    
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Tercer producto</h6>
-                                <small class="text-muted">Descripcion del producto</small>
-                            </div>
-                            <span class="text-muted"></span>
-                        </li>
-    
-                        <li class="list-group-item d-flex justify-content-between bg-light">
-                            <div class="text-success">
-                                <h6 class="my-0">Codigo de descuento</h6>
-                                <small class="text-success">CUPONEJEMPLO99</small>
-                            </div>
-                            <span class="text-success"></span>
-                        </li>
-    
-                        <li class="list-group-item d-flex justify-content-between bg-light">
-                            <span class="text-muted">Total (USD)</span>
-                            <strong></strong>
-                        </li>
-                    </ul>
-    
-                    <form action="" class="card p-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Cupon">
-                            <div class="input-group-append">
-                                <button class="btn btn-secondary">Canjear</button>
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>
         </div>
-
+        <div class="mt-5">
             <app-footer></app-footer>
+        </div>
         

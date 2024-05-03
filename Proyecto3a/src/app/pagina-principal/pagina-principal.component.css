@@ -132,6 +132,9 @@ body {
     padding-top: 5px;
 }
 
+
+
+
 @media (max-width: 768px) {
     .max-container {
       max-width: 90%; 
