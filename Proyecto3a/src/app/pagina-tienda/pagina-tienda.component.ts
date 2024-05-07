@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
-import { FooterComponent } from '../footer/footer.component';
+import { FooterComponent } from '../component/footer/footer.component';
 
 
 @Component({
@@ -13,6 +13,6 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './pagina-tienda.component.css'
 })
 export class PaginaTiendaComponent {
-  titulo = "Pagina tienda";
-  subtitulo = "Inscripciones";
+  titulo = "Inscripciones ";
+  subtitulo = "En colaboración con la sociedad";
 }

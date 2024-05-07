@@ -8,47 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
   <link href="pagina-quienes-somos.component.css" rel="stylesheet">
-  <style>
-    .card {
-      background-color: purple; 
-      color: white; 
-      text-align: center; 
-      height: 100%; 
-    }
 
-    .card img {
-      width: 100%; 
-      height: auto; 
-    }
-
-    .card-body {
-      padding: 20px; 
-    }
-
-    .quienes-somos-texto {
-      background-color: #e6e6fa; 
-      padding: 20px; 
-      border-radius: 10px; 
-    }
-
-    .card-title {
-      margin-top: 15px; 
-    }
-
-    .card-text {
-      margin-bottom: 15px; 
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-   
-    <div class="row">
-      <div class="col-md-12">
+
         <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
-      </div>
-    </div>
-  </div>
+
 
   
   <section id="quienes-somos" class="py-5">
@@ -91,16 +56,10 @@
         </div>
       </div>
     </div>
-  </section>
-
- 
-  <div class="container">
-    <app-footer></app-footer>
-  </div>
-
-  
+  </section>  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<app-footer></app-footer>
 </html>

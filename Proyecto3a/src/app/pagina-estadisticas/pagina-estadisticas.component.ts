@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
-import { FooterComponent } from '../footer/footer.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { FooterComponent } from '../component/footer/footer.component';
 
 @Component({
   selector: 'app-pagina-estadisticas',
@@ -10,6 +10,6 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './pagina-estadisticas.component.css'
 })
 export class PaginaEstadisticasComponent {
-  titulo = "Pagina estadisticas";
-  subtitulo = "Estadisticas"
+  titulo = "Estadísticas";
+  subtitulo = "En colaboracion con la sociedad";
 }

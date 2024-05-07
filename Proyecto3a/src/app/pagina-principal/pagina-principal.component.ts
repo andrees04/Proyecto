@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from '../footer/footer.component';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
+import { FooterComponent } from '../component/footer/footer.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';

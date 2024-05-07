@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
-import { FooterComponent } from '../footer/footer.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { FooterComponent } from '../component/footer/footer.component';
 
 
 @Component({
@@ -12,5 +12,5 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PaginaAsumimosRiesgosComponent {
   titulo = "Pagina riesgos";
-  subtitulo = "qwertyuiop";
+  subtitulo = "En colaboración con la sociedad";
 }

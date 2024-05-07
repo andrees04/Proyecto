@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
-import { FooterComponent } from '../footer/footer.component';
-
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { FooterComponent } from '../component/footer/footer.component';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-pagina-inicio-sesion',
   standalone: true,
-  imports: [EncabezadoComponent, FooterComponent],
+  imports: [EncabezadoComponent, FooterComponent, RouterLink],
   templateUrl: './pagina-inicio-sesion.component.html',
   styleUrl: './pagina-inicio-sesion.component.css'
 })

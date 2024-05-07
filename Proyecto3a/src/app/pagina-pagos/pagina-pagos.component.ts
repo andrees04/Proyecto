@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
-import { FooterComponent } from '../footer/footer.component';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { FooterComponent } from '../component/footer/footer.component';
 
 @Component({
   selector: 'app-pagina-pagos',
@@ -11,6 +11,5 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PaginaPagosComponent {
   titulo = "Formulario de Pago";
-  subtitulo = "";
-  
+  subtitulo = "En colaboracion con la sociedad";
 }
