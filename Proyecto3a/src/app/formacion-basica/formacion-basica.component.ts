@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../component/footer/footer.component';
-import { RouterLink } from '@angular/router';
+import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-formacion-basica',
   standalone: true,
-  imports: [EncabezadoComponent,FooterComponent,RouterLink],
+  imports: [EncabezadoComponent,FooterComponent,RouterLink, RouterLinkActive, CommonModule, RouterOutlet],
   templateUrl: './formacion-basica.component.html',
   styleUrl: './formacion-basica.component.css'
 })
 export class FormacionBasicaComponent {
-  titulo = "Inscripciones ";
-  subtitulo = "En colaboración con la sociedad";
+  titulo = "Formacion Basica";
+  subtitulo = "";
 }

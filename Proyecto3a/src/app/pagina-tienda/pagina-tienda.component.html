@@ -2,73 +2,74 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Incripción</title>
-    <link rel="shortcut icon" href="img/cabeza.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inscripción</title>
+  <link rel="shortcut icon" href="img/cabeza.png" type="image/x-icon">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
-    <style>
- 
-    </style>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <style>
 
-<app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+  </style>
 
-<div class="card mb-3 mx-auto" style="max-width: 1540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8 d-flex align-items-center">
-      <div class="card-body text-center">
-        <h2 class="card-title">Formación Básica</h2>
-        <p class="card-text text-center">Descripción del curso.</p>
-        <p class="card-text text-center">Precio: 49.99€</p>
-        <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;"> <a class="nav-link" routerLink="/pagina-pagos" routerLinkActive="active">Comprar ahora</a></button>
+  <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
+
+  <div class="card mb-3 mx-auto" style="max-width: 1540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8 d-flex align-items-center">
+        <a   routerLink="/formacion-basica" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+          <div class="card-body text-center">
+            <h2 class="card-title">Formación Básica</h2>
+            <p class="card-text text-center">Descripción del curso.</p>
+            <p class="card-text text-center">Precio: 49.99€</p>
+            <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;">Comprar ahora</button>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-</div>
-<div class="card mb-3 mx-auto" style="max-width: 1540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8 d-flex align-items-center">
-      <div class="card-body text-center">
-        <h2 class="card-title">Formacion Avanzada</h2>
-        <p class="card-text text-center">Descripción del curso.</p>
-        <p class="card-text text-center">Precio: 99.99€</p>
-        <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;"> <a class="nav-link" routerLink="/pagina-pagos" routerLinkActive="active">Comprar ahora</a></button>
+  <div class="card mb-3 mx-auto text-center" style="max-width: 1540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8 d-flex align-items-center">
+        <a routerLink="/formacion-avanzada" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+        <div class="card-body">
+          <h2 class="card-title">Formacion Avanzada</h2>
+          <p class="card-text">Descripción del curso.</p>
+          <p class="card-text">Precio: 99.99€</p>
+          <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;"> <a class="nav-link" routerLink="/pagina-pagos" routerLinkActive="active">Comprar ahora</a></button>
+        </div>
+       </a>
       </div>
     </div>
   </div>
-</div>
-<div class="card mb-3 mx-auto mb-5" style="max-width: 1540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8 d-flex align-items-center">
-      <div class="card-body text-center">
-        <h2 class="card-title">Formacion Premium</h2>
-        <p class="card-text text-center">Descripción del curso.</p>
-        <p class="card-text text-center">Precio: 149.99€</p>
-        <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;"> <a class="nav-link" routerLink="/pagina-pagos" routerLinkActive="active">Comprar ahora</a></button>
+  
+  <div class="card mb-3 mx-auto text-center mb-5" style="max-width: 1540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="assets/img/curso1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8 d-flex align-items-center">
+        <a routerLink="/formacion-premium" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+        <div class="card-body">
+          <h2 class="card-title">Formacion Premium</h2>
+          <p class="card-text">Descripción del curso.</p>
+          <p class="card-text">Precio: 149.99€</p>
+          <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;"> <a class="nav-link" routerLink="/pagina-pagos" routerLinkActive="active">Comprar ahora</a></button>
+        </div>
+       </a>
       </div>
     </div>
   </div>
-</div>
-
+  
 
 
 
   <app-footer></app-footer>
-  
-  
-  
-  
-  
-  

@@ -8,6 +8,9 @@ import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.compo
 import { PaginaInicioSesionComponent } from './pagina-inicio-sesion/pagina-inicio-sesion.component';
 import { PaginaRegistroComponent } from './pagina-registro/pagina-registro.component';
 import { PaginaQuienesSomosComponent } from './pagina-quienes-somos/pagina-quienes-somos.component';
+import { FormacionBasicaComponent } from './formacion-basica/formacion-basica.component';
+import { FormacionAvanzadaComponent } from './formacion-avanzada/formacion-avanzada.component';
+import { FormacionPremiumComponent } from './formacion-premium/formacion-premium.component';
 import { Error404Component } from './component/error404/error404.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -36,6 +39,12 @@ export const routes: Routes = [
     {path: 'pagina-registro', component: PaginaRegistroComponent},
 
     {path: 'pagina-contacto', component: PaginaContactoComponent},
+
+    {path: 'formacion-basica', component: FormacionBasicaComponent},
+
+    {path: 'formacion-avanzada', component: FormacionAvanzadaComponent},
+
+    {path: 'formacion-premium', component: FormacionPremiumComponent},
 
     {path: 'error404', component: Error404Component},
 
