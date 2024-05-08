@@ -18,7 +18,7 @@ import path from 'path';
 
 export const routes: Routes = [
 
-    { path: '',   redirectTo: '/pagina-principal', pathMatch: 'full' },
+    { path: '',   redirectTo: '/formacion-basica', pathMatch: 'full' },
 
     { path: 'pagina-principal', title:"Home", component: PaginaPrincipalComponent },
 
