@@ -32,8 +32,7 @@
 
 <body>
 
-  <app-encabezado [st]="subtitulo" [t]="titulo"></app-encabezado>
-
+  <app-encabezado [t]="titulo" [st]="subtitulo" ngSkipHydration></app-encabezado>
   <div class="container mt-5">
 
     <div class="row justify-content-around mb-3">

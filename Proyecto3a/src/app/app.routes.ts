@@ -11,9 +11,7 @@ import { PaginaQuienesSomosComponent } from './pagina-quienes-somos/pagina-quien
 import { FormacionBasicaComponent } from './formacion-basica/formacion-basica.component';
 import { FormacionAvanzadaComponent } from './formacion-avanzada/formacion-avanzada.component';
 import { FormacionPremiumComponent } from './formacion-premium/formacion-premium.component';
-import { Error404Component } from './component/error404/error404.component';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Error404Component } from './component/error404/error404.component'
 import path from 'path';
 
 export const routes: Routes = [

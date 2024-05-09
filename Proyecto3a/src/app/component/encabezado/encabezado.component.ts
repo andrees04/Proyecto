@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input, input , HostBinding } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -11,4 +11,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class EncabezadoComponent {
   @Input({required: true}) t!: string;
   @Input({required: true}) st!: string;
+  @HostBinding('attr.ngSkipHydration') skipHydration = true;
 }
