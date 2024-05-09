@@ -4,7 +4,9 @@
     text-align: center; 
     height: 100%; 
   }
-
+body{
+  background-color: white;
+}
   .card img {
     width: 100%; 
     height: auto; 
@@ -13,17 +15,23 @@
   .card-body {
     padding: 20px; 
   }
+  .text-purple {
+    color: blueviolet;
+}
 
   .quienes-somos-texto {
     background-color: #e6e6fa; 
     padding: 20px; 
     border-radius: 10px; 
   }
-
   .card-title {
     margin-top: 15px; 
   }
 
   .card-text {
     margin-bottom: 15px; 
+  }
+
+  .container {
+    background-color: white;
   }
