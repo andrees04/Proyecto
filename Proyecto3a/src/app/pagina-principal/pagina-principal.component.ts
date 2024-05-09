@@ -4,13 +4,14 @@ import { FooterComponent } from '../component/footer/footer.component';
 import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { CartasFooterComponent } from '../component/cartas-footer/cartas-footer.component';
 import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-pagina-principal',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, EncabezadoComponent, RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterOutlet, FooterComponent, EncabezadoComponent, RouterLink, RouterLinkActive, CommonModule, CartasFooterComponent],
   templateUrl: './pagina-principal.component.html',
   styleUrl: './pagina-principal.component.css'
 })
