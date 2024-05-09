@@ -3,7 +3,7 @@
 }
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .custom-radio input[type="radio"]:checked + .custom-control-label::before {
     background-color: rgb(255, 124, 255);
