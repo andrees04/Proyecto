@@ -1,5 +1,3 @@
-import { Routes } from '@angular/router'
-import { RouterModule } from '@angular/router';
 import { PaginaAsumimosRiesgosComponent } from './pagina-asumimos-riesgos/pagina-asumimos-riesgos.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { PaginaEstadisticasComponent } from './pagina-estadisticas/pagina-estadisticas.component';
@@ -13,7 +11,10 @@ import { FormacionBasicaComponent } from './formacion-basica/formacion-basica.co
 import { FormacionAvanzadaComponent } from './formacion-avanzada/formacion-avanzada.component';
 import { FormacionPremiumComponent } from './formacion-premium/formacion-premium.component';
 import { Error404Component } from './component/error404/error404.component'
-import path from 'path';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+
 
 export const routes: Routes = [
 
@@ -50,3 +51,9 @@ export const routes: Routes = [
     {path: '**', redirectTo: '/error404'}
 
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes, { useHash: false })],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule { }

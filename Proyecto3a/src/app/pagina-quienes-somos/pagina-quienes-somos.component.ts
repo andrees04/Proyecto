@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { FooterComponent } from '../component/footer/footer.component';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-quienes-somos',
@@ -13,10 +12,4 @@ import { Router } from '@angular/router';
 export class PaginaQuienesSomosComponent {
   titulo = "Quienes somos?";
   subtitulo = "En colaboracion con la sociedad";
-
-  
-  constructor(private router: Router) {
-    const currentRoute = this.router.url;
-    console.log('Ruta actual:', currentRoute);
-}
 }

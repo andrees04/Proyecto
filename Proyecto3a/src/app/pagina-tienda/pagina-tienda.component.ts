@@ -15,5 +15,4 @@ import { FooterComponent } from '../component/footer/footer.component';
 export class PaginaTiendaComponent {
   titulo = "Inscripciones ";
   subtitulo = "En colaboración con la sociedad";
-
 }
