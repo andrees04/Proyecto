@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
+import { RouterModule } from '@angular/router';
 import { PaginaAsumimosRiesgosComponent } from './pagina-asumimos-riesgos/pagina-asumimos-riesgos.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { PaginaEstadisticasComponent } from './pagina-estadisticas/pagina-estadisticas.component';
@@ -16,7 +17,7 @@ import path from 'path';
 
 export const routes: Routes = [
 
-    { path: '',   redirectTo: '/formacion-basica', pathMatch: 'full' },
+    { path: '',   redirectTo: '/pagina-principal', pathMatch: 'full' },
 
     { path: 'pagina-principal', title:"Home", component: PaginaPrincipalComponent },
 

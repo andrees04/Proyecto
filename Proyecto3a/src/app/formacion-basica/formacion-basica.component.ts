@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
 
-
 @Component({
   selector: 'app-formacion-basica',
   standalone: true,
@@ -18,4 +17,5 @@ import { HostListener } from '@angular/core';
 export class FormacionBasicaComponent {
   titulo = "Formacion Basica";
   subtitulo = "";
+
 }

@@ -26,4 +26,6 @@ export class PaginaPrincipalComponent {
     const img = document.querySelector('.card-img-top') as HTMLElement;
     img.style.filter = hover ? 'brightness(70%)' : 'none';
   }
+
+  
 }

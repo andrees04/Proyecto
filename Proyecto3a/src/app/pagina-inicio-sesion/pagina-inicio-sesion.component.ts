@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { FooterComponent } from '../component/footer/footer.component';
 import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-pagina-inicio-sesion',
   standalone: true,
@@ -12,4 +13,6 @@ import { RouterLink } from '@angular/router';
 export class PaginaInicioSesionComponent {
   titulo = "Potencia tus estudios sobre la educacion sexual";
   subtitulo = "En colaboracion con la sociedad";
+
+
 }

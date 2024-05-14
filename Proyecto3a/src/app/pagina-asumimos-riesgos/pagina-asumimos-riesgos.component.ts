@@ -3,6 +3,7 @@ import { EncabezadoComponent } from '../component/encabezado/encabezado.componen
 import { FooterComponent } from '../component/footer/footer.component';
 
 
+
 @Component({
   selector: 'app-pagina-asumimos-riesgos',
   standalone: true,
@@ -13,4 +14,6 @@ import { FooterComponent } from '../component/footer/footer.component';
 export class PaginaAsumimosRiesgosComponent {
   titulo = "Pagina riesgos";
   subtitulo = "En colaboración con la sociedad";
+
+
 }

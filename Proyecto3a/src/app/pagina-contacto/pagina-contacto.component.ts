@@ -12,6 +12,8 @@ import { FooterComponent } from '../component/footer/footer.component';
 export class PaginaContactoComponent {
   titulo = "Contactanos";
   subtitulo = "En colaboracion con la sociedad";
+
+
 }
 
 

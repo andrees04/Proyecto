@@ -18,4 +18,5 @@ export class FormacionPremiumComponent {
   titulo = "Formacion premium";
   subtitulo = "";
 
+
 }
