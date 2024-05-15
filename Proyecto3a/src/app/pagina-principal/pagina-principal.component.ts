@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { CartasFooterComponent } from '../component/cartas-footer/cartas-footer.component';
 import { ApiService } from '../servicio/api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -30,6 +31,20 @@ export class PaginaPrincipalComponent {
     img.style.filter = hover ? 'brightness(70%)' : 'none';
   }
 
-  
+
+  data: any[] = [];
+
+  constructor(private apiService: ApiService ) { }
+
+  ngOnInit() : void {
+    this.llenarData();
+  }
+
+  llenarData() {
+    this.apiService.getData().subscribe(data => {
+      this.data = data;
+      console.log(this.data);
+    });
+  }
 
 }
