@@ -1,21 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../component/footer/footer.component';
 import { EncabezadoComponent } from '../component/encabezado/encabezado.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CartasFooterComponent } from '../component/cartas-footer/cartas-footer.component';
-import { NgModule } from '@angular/core';
-import { HostListener } from '@angular/core';
+import { ApiService } from '../servicio/api.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-pagina-principal',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, EncabezadoComponent, RouterLink, RouterLinkActive, CommonModule, CartasFooterComponent],
+  imports: [RouterOutlet, FooterComponent, EncabezadoComponent, RouterLink, RouterLinkActive, CommonModule, CartasFooterComponent, HttpClientModule],
   templateUrl: './pagina-principal.component.html',
   styleUrl: './pagina-principal.component.css'
 })
 export class PaginaPrincipalComponent {
+
+  
 
   mostrarFondo: boolean = false;
 
@@ -28,4 +31,5 @@ export class PaginaPrincipalComponent {
   }
 
   
+
 }
