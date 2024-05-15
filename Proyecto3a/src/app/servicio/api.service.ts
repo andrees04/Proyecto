@@ -13,7 +13,7 @@ export class ApiService {
 
   public getData(): Observable<any> 
   {
-    return this.http.get<any>('https://rickandmortyapi.com/api/character/1,183');
+    return this.http.get<any>('https://rickandmortyapi.com/api/character/1,183,28,3');
   }
     
   }
