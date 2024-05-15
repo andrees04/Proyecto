@@ -3,6 +3,7 @@ import { EncabezadoComponent } from '../component/encabezado/encabezado.componen
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
 import { FooterComponent } from '../component/footer/footer.component';
+import { ApiService } from '../servicio/api.service';
 
 
 @Component({
@@ -15,4 +16,23 @@ import { FooterComponent } from '../component/footer/footer.component';
 export class PaginaTiendaComponent {
   titulo = "Inscripciones ";
   subtitulo = "En colaboración con la sociedad";
+
+  textoDescuento = "Tienes un descuento pendiente...";
+  descuento = 6.9;
+
+  personajes: any[] = [];
+
+  constructor(private apiService: ApiService) {}
+  
+  ngOnInit() : void {
+    this.apiService.getData().subscribe(
+      data => {
+        this.personajes = data;
+      }
+    );
+  }
+
+  public hacerDescuento() : void {
+    this.textoDescuento = "iouashdiofuahsiodfhasf";
+  }
 }
