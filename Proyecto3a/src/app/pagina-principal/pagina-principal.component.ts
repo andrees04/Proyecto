@@ -31,20 +31,4 @@ export class PaginaPrincipalComponent {
     img.style.filter = hover ? 'brightness(70%)' : 'none';
   }
 
-
-  data: any[] = [];
-
-  constructor(private apiService: ApiService ) { }
-
-  ngOnInit() : void {
-    this.llenarData();
-  }
-
-  llenarData() {
-    this.apiService.getData().subscribe(data => {
-      this.data = data;
-      console.log(this.data);
-    });
-  }
-
 }
