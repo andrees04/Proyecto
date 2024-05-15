@@ -23,8 +23,8 @@ export class PaginaPrincipalComponent {
 
   mostrarFondo: boolean = false;
 
-  titulo = "Potencia tus estudios sobre la educacion sexual";
-  subtitulo = "En colaboracion con la sociedad";
+  titulo = "Potencia tus estudios sobre la educación sexual";
+  subtitulo = "Caminos íntimos";
 
   aplicarFiltro(hover: boolean) {
     const img = document.querySelector('.card-img-top') as HTMLElement;
