@@ -19,7 +19,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PaginaPrincipalComponent {
 
-  
 
   mostrarFondo: boolean = false;
 
@@ -30,7 +29,6 @@ export class PaginaPrincipalComponent {
     const img = document.querySelector('.card-img-top') as HTMLElement;
     img.style.filter = hover ? 'brightness(70%)' : 'none';
   }
-
 
   data: any[] = [];
 
